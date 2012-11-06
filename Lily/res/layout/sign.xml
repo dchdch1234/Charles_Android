@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/day"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/sign_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button_back"
+            android:minWidth="75dip"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/sign_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button"
+            android:minWidth="75dip"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/sign_sign"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:gravity="top"
+        android:padding="5dip"
+        android:background="@drawable/edit_text"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="15dip"
+        android:hint="@string/sign_hint" />
+
+</LinearLayout>

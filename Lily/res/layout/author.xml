@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background" >
+
+    <Button
+        android:id="@+id/author_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/alert_back_button"
+        android:text="@string/back_blank" />
+
+    <Button
+        android:id="@+id/author_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:minWidth="60dip"
+        android:visibility="invisible"
+        android:background="@drawable/alert_button"
+        android:text="@string/send" />
+
+    <EditText
+        android:id="@+id/author_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_quit"
+        android:layout_margin="10dip"
+        android:background="@drawable/content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="10dip"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/author_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip" />
+
+    <TextView
+        android:id="@+id/author_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:lines="1"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/author_pic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/author_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="220dip"
+        android:background="@drawable/author_info_button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/author_send_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="220dip"
+        android:background="@drawable/send_mail_button" />
+
+    <Button
+        android:id="@+id/author_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/author_send_mail"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="220dip"
+        android:layout_toLeftOf="@+id/author_send_mail"
+        android:background="@drawable/block_button" />
+
+</RelativeLayout>

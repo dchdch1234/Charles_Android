@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dip"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/reply_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reply_submit"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/alert_back_button"
+            android:text="@string/quit_blank" />
+
+        <Button
+            android:id="@+id/reply_pic"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reply_submit"
+            android:layout_toRightOf="@+id/reply_quit"/>
+        <Button
+            android:id="@+id/reply_photo"
+             android:layout_marginLeft="5dip"
+            android:background="@drawable/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reply_submit"
+            android:layout_toRightOf="@+id/reply_pic"/>
+
+        <Button
+            android:id="@+id/reply_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/alert_button"
+            android:minWidth="60dip"
+            android:text="@string/submit" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/reply_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/content_title"
+        android:ems="10"
+        android:hint="@string/title_hint"
+        android:padding="10dip"
+        android:textColorHint="#A9F5A9" />
+
+    <EditText
+        android:id="@+id/reply_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="10dip"
+        android:textColor="@android:color/background_light" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

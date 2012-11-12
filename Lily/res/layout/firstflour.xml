@@ -13,7 +13,7 @@
         android:layout_marginTop="5dip"
         android:layout_marginRight="10dip"
         android:textColor="#08298A"
-        android:textSize="22dip" />
+        android:textSize="20dip" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -65,6 +65,6 @@
         android:layout_marginBottom="10dip"
         android:layout_marginRight="10dip"
         android:textColor="@android:color/background_dark"
-        android:textSize="19dip" />
+        android:textSize="17dip" />
 
 </LinearLayout>

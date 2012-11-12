@@ -673,7 +673,7 @@ public class DocParser {
 	}
 
 	private static final String formatContent(String content) {
-		String result = content.substring(content.indexOf("发信站: 南京大学小百合站 (") + 40);
+		String result = content.substring(content.indexOf("发信站: 南京大学小百合站 (") + 41);
 		result = result.indexOf("- ") > 0 ? result.substring(0,result.indexOf("- ")-1) : result;
 		result = result.replaceAll("【 在 .*的大作中提到: 】", "");
 		
